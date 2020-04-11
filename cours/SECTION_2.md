@@ -24,7 +24,9 @@
 -   Les réglages sont fini on peut cliquer sur Clusters et "connect"
 
 -   pour voir le contenu de la connexion on clique sur "Connect your application" et il reste plus qu'à copier le code soit pour l'exemple :
-    `mongodb+srv://zyrass04:<password>@devconnector-jsojh.mongodb.net/test?retryWrites=true&w=majority`
+    ```
+    mongodb+srv://zyrass04:<password>@devconnector-jsojh.mongodb.net/test?retryWrites=true&w=majority
+    ```
 
 ### Mongoose
 
@@ -36,26 +38,37 @@
 -   Utilisatiopn de la commande "git init"
 -   Utilisation et Initilisation de nodeJS avec un "npm init"
 -   La configuration est simple :
-    `description: Réseau Social pour développeur`
-    `entry point: server.js`
-    `author: Alain Guillon`
-    `License: MIT`
+
+    ```
+    description: Réseau Social pour développeur
+    entry point: server.js
+    author: Brad Traversy
+    License: MIT
+    ```
 
 -   Dans le fichier "package.json", on doit modifier le script avec l'ajout de cette ligne :
-    `"start": "node server"` // npm start
-    `"server": "nodemon server"` // npm run server
 
--   On install les dépendances : `npm i express express-validator bcrypt.js config gravatar jsonwebtoken mongoose request`
--   On install Nodemon: `npm i -D nodemon concurrently`
+    ```json
+    // npm start
+    "start": "node server",
+    // npm run server
+    "server": "nodemon server"
+    ```
+
+-   On install les dépendances : **npm i express express-validator bcrypt.js config gravatar jsonwebtoken mongoose request**
+-   On install Nodemon: **npm i -D nodemon concurrently**
 
 -   Création d'un fichier serveur.js
     Contenu du fichier server.js :
 
-    -- const express = require('express);
-    -- const app = express();
-    -- app.get('/', (req, res) => res.send('API Runnning'));
-    -- const PORT = process.env.PORT || 5000;
-    -- app.listen(PORT, () => console.log(`Server started on port ${ PORT }`));
+    ```js
+    const express = require('express');
+    const app = express();
+    const PORT = process.env.PORT || 5000;
+
+    app.get('/', (req, res) => res.send('API Runnning'));
+    app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+    ```
 
 -   Une fois le fichier créer dans le terminal on peut lancer le server
 
@@ -68,30 +81,39 @@
     -- Ce fichier "default.json" sera utilisé grâce à la dépendance "config" qu'on a installé dans notre "package.json"
 
 -   dans le fichier "default.json" on lui ajoute l'URL qu'on a récupérer dans mongoDB. Le code pour moi sera le suivant :
-    `{`
-    `"mongoURI": "mongodb+srv://zyrass04:<password>@devconnector-jsojh.mongodb.net/test?retryWrites=true&w=majority"`
-    `}`
+
+    ```json
+    {
+    	"mongoURI": "mongodb+srv://zyrass04:<password>@devconnector-jsojh.mongodb.net/test?retryWrites=true&w=majority"
+    }
+    ```
+
 -   On créer dans le dossier "config" un autre fichier "db.js" qui nous permettra de nous connecter à la base de donnée.
     -- Le contenu du fichier est le suivant :
-    `const mongoose = require('mongoose');`
-    `const config = require('config');` // https://www.npmjs.com/package/config
-    `const db = config.get('mongoURI');`
-    `const connectDB = async () => {`
-    `try {`
-    `await mongoose.connect(db, {`
-    `useNewUrlParser: true`
-    `useUnifiedTopology: true`
-    `});`
-    `console.log('MongoDB Connected...');`
-    `} catch (error) {`
-    `console.error( error.message )`;
-    `process.exit(1); // Exit process with failure`
-    `}`
-    `};`
-    `module.exports = connectDB;`
+
+    ```js
+    const mongoose = require('mongoose');
+    const config = require('config'); // https://www.npmjs.com/package/config
+    const db = config.get('mongoURI');
+
+    const connectDB = async () => {
+    	try {
+    		await mongoose.connect(db, {
+    			useNewUrlParser: true,
+    			useUnifiedTopology: true,
+    		});
+    		console.log('MongoDB Connected...');
+    	} catch (error) {
+    		console.error(error.message);
+    		process.exit(1); // Exit process with failure
+    	}
+    };
+
+    module.exports = connectDB;
+    ```
 
 -   A ce moment on peut re lancer le server et tout devrait marcher correctement.
--   soit dans un terminal : "npm run server"
+-   soit dans un terminal : **"npm run server"**
 
 ## Vidéo n°8 - Route Files With Express Router
 
@@ -103,48 +125,76 @@
     -- Le contenu des fichiers sera au début similaire hormis que les routes elles seront différentes.
 
     Pour users.js :
-    `const express = require('express');`
-    `const router = express.Router();`
-    `// @route GET api/users`
-    `// @desc Test route`
-    `// @access Public`
-    `route.get('/', (req, res) => res.send('User route'));`
-    `module.exports = router;`
+
+    ```js
+    const express = require('express');
+    const router = express.Router();
+
+    // @route GET api/users
+    // @desc Type route
+    // @access Public
+
+    router.get('/', (req, res) => res.send('User route'));
+
+    module.exports = router;
+    ```
 
     Pour auth.js :
-    `const express = require('express');`
-    `const router = express.Router();`
-    `// @route GET api/auth`
-    `// @desc Test route`
-    `// @access Public`
-    `route.get('/', (req, res) => res.send('Auth route'));`
-    `module.exports = router;`
+
+    ```js
+    const express = require('express');
+    const router = express.Router();
+
+    // @route GET api/auth
+    // @desc Test route
+    // @access Public
+
+    route.get('/', (req, res) => res.send('Auth route'));
+
+    module.exports = router;
+    ```
 
     Pour profile.js :
-    `const express = require('express');`
-    `const router = express.Router();`
-    `// @router GET api/profile`
-    `// @desc Test route`
-    `// @access Public`
-    `route.get('/', (req, res) => res.send('Profile route'));`
-    `module.exports = router;`
+
+    ```js
+    const express = require('express');
+    const router = express.Router();
+
+    // @router GET api/profile
+    // @desc Test route
+    // @access Public
+
+    route.get('/', (req, res) => res.send('Profile route'));
+
+    module.exports = router;
+    ```
 
     Pour posts :
-    `const express = require('express');`
-    `const router = express.Router();`
-    `// @route api/posts`
-    `// @desc Test route`
-    `// @access Public`
-    `router.get('/', (req, res) => res.send('Posts route') );`
-    `module.exports = router;`
+
+    ```js
+    const express = require('express');
+    const router = express.Router();
+
+    // @route api/posts
+    // @desc Test route
+    // @access Public
+
+    router.get('/', (req, res) => res.send('Posts route'));
+
+    module.exports = router;
+    ```
 
 -   Dans le fichier "server.js" on y ajoute les routes soit :
-    `// Define Routes`
-    `app.use('/api/users', require('./routes/api/users') );`
-    `app.use('/api/auth', require('./routes/api/auth') );`
-    `app.use('/api/profile', require('./routes/api/profile') );`
-    `app.use('api/posts', require('./routes/api/posts') );`
 
--   On peut lancer le serveur avec : "npm run server"
--   Dans une page web, on tape l'url : "localhost:5000/"
--   On ajoute a la fin "api/users" soit : "localhost:5000/api/users" et on devrait avoir un résultat. On test les 4 routes et on peut passé à la section 3 si tout est OK
+    ```js
+    // Add Define Routes
+    app.use('/api/users', require('./routes/api/users'));
+    app.use('/api/auth', require('./routes/api/auth'));
+    app.use('/api/profile', require('./routes/api/profile'));
+    app.use('api/posts', require('./routes/api/posts'));
+    ```
+
+-   On peut lancer le serveur avec : **"npm run server"**
+-   Dans une page web, on tape l'url : **"localhost:5000/"**
+-   On ajoute a la fin "api/users" soit : **"localhost:5000/api/users"** et on devrait avoir un résultat.
+-   On test les 4 routes et on peut passé à la section 3 si tout est OK
