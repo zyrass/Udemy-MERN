@@ -38,6 +38,40 @@ module.exports = User = mongoose.model('user', UserSchema);
 
 ## Vidéo n°10 - Request & Body Validation
 
+-   On va dans le dossiers "routes/api" et on sélectionne le fichier "users.js"
+-   On modifie la route précédemment créer comme suit :
+
+### Avant
+
+```js
+const express = require('express');
+const router = express.Router();
+
+// @route GET api/users
+// @desc Test route
+// @access Public
+router.get('/', (req, res) => res.send('Users route GET'));
+
+module.exports = router;
+```
+
+### Après
+
+```js
+const express = require('express');
+const router = express.Router();
+
+// @route POST api/users
+// @desc Register user
+// @access Public
+router.post('/', (req, res) => {
+	console.log({ req: [req, req.body] });
+	res.send('Users route POST');
+});
+
+module.exports = router;
+```
+
 ## Vidéo n°11 - User Registration
 
 ## Vidéo n°12 - Implementing JWT
