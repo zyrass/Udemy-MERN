@@ -2,7 +2,7 @@
 
 ## Vidéo n°9 - Creating the User Model
 
--   Création d'un dossier à la racine du serveur appelé : "modules"
+-   Création d'un dossier à la racine du serveur appelé : "models"
 -   A l'intérieur on créer un fichier "User.js"
 -   Le contenu du fichier "User.js" :
 
