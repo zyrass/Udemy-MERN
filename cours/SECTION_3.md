@@ -175,7 +175,6 @@ module.exports = router;
 ```
 
 -   Si on saisit toutes les bonnes valeurs, on se retrouve avec comme résultat un **status: 200 OK** avec **User route POST**
-
 -   Si tout les tests on été réaliser avec succès, nous pouvons à ce moment sauvegarder notre requete en cliquant sur _la petite flèche_ à droite du bouton **save** soit : _save as_
 -   Une fenêtre s'ouvre, on va tout en bas et on clique sur la collection **Users & Auth** qu'on a préalablement créer.
 -   Tout en haut on définit le nom à _Register user_
