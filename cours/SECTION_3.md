@@ -245,7 +245,7 @@ router.post(
 module.exports = router;
 ```
 
-### Vidéo 11 - Etape 1
+### Vidéo 11 - Etape 1 à 4 (la 4 n'est pas complète)
 
 -   on peut voir le contenu d'un élément avec ce genre de ligne de code :
 
@@ -408,12 +408,6 @@ router.post(
 	}
 );
 ```
-
-### Vidéo 11 - Etape 2
-
-### Vidéo 11 - Etape 3
-
-### Vidéo 11 - Etape 4
 
 -- voir la section suivante
 
