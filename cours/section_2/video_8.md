@@ -1,4 +1,11 @@
-## Vidéo n°8 - Route Files With Express Router
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_7.md)
+-   [Allez à la section suivante](../section_3/section_3.md)
+
+# Vidéo n°8 - Route Files With Express Router
 
 -   On créer à la racine de l'application d'un dossier appelé "routes"
 -   On créer un sous-dossier appelé : "api"
@@ -81,3 +88,10 @@
 -   Dans une page web, on tape l'url : **"localhost:5000/"**
 -   On ajoute a la fin "api/users" soit : **"localhost:5000/api/users"** et on devrait avoir un résultat.
 -   On test les 4 routes et on peut passé à la section 3 si tout est OK
+
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_7.md)
+-   [Allez à la section suivante](../section_3/section_3.md)

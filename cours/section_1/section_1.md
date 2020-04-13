@@ -1,11 +1,9 @@
-# MERN project
-
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
 -   [Allez à la section suivante](../section_2/section_2.md)
 
-## Section N°1 - Introduction
+# Section N°1 - Introduction
 
 | Vidéo N° | Lien du guide qui en parle                                                |
 | -------- | ------------------------------------------------------------------------- |

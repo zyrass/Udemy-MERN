@@ -1,12 +1,11 @@
-# Section N°2 - Express & MongoDB Setup
-
 ## Lien rapide
 
--   [Retourner à la description principale](../master/README.md)
--   [Allez à la section précédente](../master/cours/section_1/section_1.md)
--   [Allez à la section suivante](../master/cours/section_3/section_3.md)
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la section précédente](../section_1/section_1.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo suivante](./video_6.md)
 
-## Vidéo n°5 - MongoDB Atlas Setup
+# Vidéo n°5 - MongoDB Atlas Setup
 
 ### MondoDB
 
@@ -39,6 +38,7 @@ Pour l'exemple :
 
 ## Lien rapide
 
--   [Retourner à la description principale](../master/README.md)
--   [Allez à la section précédente](../master/cours/section_1/section_1.md)
--   [Allez à la section suivante](../master/cours/section_3/section_3.md)
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la section précédente](../section_1/section_1.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo suivante](./video_6.md)

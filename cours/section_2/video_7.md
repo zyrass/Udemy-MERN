@@ -1,4 +1,11 @@
-## Vidéo n°7 - Connecting To MongoDB with Mongoose
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_6.md)
+-   [Allez à la vidéo suivante](./video_8.md)
+
+# Vidéo n°7 - Connecting To MongoDB with Mongoose
 
 -   Dans MongoDB on clique sur "connect" puis sur "connect your application" et on copie "l'url" généré
 
@@ -40,3 +47,10 @@
 
 -   A ce moment on peut re lancer le server et tout devrait marcher correctement.
 -   soit dans un terminal : **"npm run server"**
+
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_5.md)
+-   [Allez à la vidéo suivante](./video_7.md)

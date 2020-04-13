@@ -33,6 +33,7 @@
 
 > Git est un logiciel de versioning, il nous permet de revenir très simplement sur un code antérieur en cas de problème.
 > Git Bash est avant tout utilisé pour les utilisateurs sur **windows**. En effet il va nous permettre d'utiliser des commande linux dans notre terminal.
+> [page officiel du git](https://git-scm.com/)
 
 -   Un **IDE** d'installé sur sa machine.
 
@@ -112,7 +113,7 @@ _Résultat obtenu_
 </ul>
 ```
 
-> c'est vraiment très pratique, vous ne trouvez pas !?
+> c'est chouette non ?
 
 ## Lien rapide
 

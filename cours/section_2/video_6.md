@@ -1,4 +1,11 @@
-## Vidéo n°6 - Install Dependancies & Basic Express Setup
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_5.md)
+-   [Allez à la vidéo suivante](./video_7.md)
+
+# Vidéo n°6 - Install Dependancies & Basic Express Setup
 
 -   Ajout d'un fichier .gitignore en y ajoutant le répertoire "node_modules/"
 -   Utilisatiopn de la commande "git init"
@@ -37,3 +44,10 @@
     ```
 
 -   Une fois le fichier créer dans le terminal on peut lancer le server
+
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_5.md)
+-   [Allez à la vidéo suivante](./video_7.md)

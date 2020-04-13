@@ -1,4 +1,11 @@
-## Vidéo n°10 - Request & Body Validation
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°3](../section_3/section_3.md)
+-   [Allez à la vidéo précédente](./video_9.md)
+-   [Allez à la vidéo suivante](./video_11.md)
+
+# Vidéo n°10 - Request & Body Validation
 
 -   On va dans le dossiers "routes/api" et on sélectionne le fichier "users.js"
 -   On modifie la route précédemment créer comme suit :
@@ -143,3 +150,10 @@ module.exports = router;
 -   Si tout les tests on été réaliser avec succès, nous pouvons à ce moment sauvegarder notre requete en cliquant sur _la petite flèche_ à droite du bouton **save** soit : _save as_
 -   Une fenêtre s'ouvre, on va tout en bas et on clique sur la collection **Users & Auth** qu'on a préalablement créer.
 -   Tout en haut on définit le nom à _Register user_
+
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°3](../section_3/section_3.md)
+-   [Allez à la vidéo précédente](./video_9.md)
+-   [Allez à la vidéo suivante](./video_11.md)
