@@ -13,7 +13,7 @@
 
 1. Création d'un compte sur : `https://mongodb.com/` _Normalement **l'étape 1** est déjà faite_
 2. Une fois connecté, il faut créer un nouveau projet ( Menu **context** > **New Project** )
-3. On lui donne un nom **MEARN** puis on clique sur **next**
+3. On lui donne un nom **MERN** puis on clique sur **next**
 4. On clique sur **Create Project**
 5. Une fenêtre apparait, on clique sur **Build a Cluster**
 6. On sélectionne le premier choix _qui est gratuit_ en cliquant sur **Create a cluster**
