@@ -9,15 +9,15 @@ Voici les pré-requis pour le bon fonctionnement du projet.
 
 ### 1. Comptes à créer pour comprendre chaque étapes.
 
--- [Un compte sur Github](https://github.com/) **Nous permets de stocker notre code versionné sur internet**
--- [Un compte sur MongoDB](https://www.mongodb.com/) **Nous permets de stocker des données dans une base de donnée en ligne**
--- [Un compte sur Postman](https://www.postman.com/) **Nous permettra de tester des futurs requêtes HTTP**.
+-   [Un compte sur Github](https://github.com/) **Nous permets de stocker notre code versionné sur internet**
+-   [Un compte sur MongoDB](https://www.mongodb.com/) **Nous permets de stocker des données dans une base de donnée en ligne**
+-   [Un compte sur Postman](https://www.postman.com/) **Nous permettra de tester des futurs requêtes HTTP**.
 
 > Un équivalent à **Postman** existe en Français il s'agit de [RESTAPI](https://restapi.fr/) créer par [DYMA.FR](https://dyma.fr)
 
 ### 2 - Les outils indispensable pour un meilleur espace de travail
 
--- Avoir **node** d'installé sur son ordinateur
+-   Avoir **node** d'installé sur son ordinateur
 
 > Lien vers le site officiel : [Node](https://nodejs.org/en/)
 > Node nous permet d'utiliser le gestionnaire de dépendance **NPM** (_Node package manager_)
@@ -43,14 +43,14 @@ npm --version
 npm -v
 ```
 
--- Avoir **Git** et **Git/Bash** d'installé sur son ordinateur. [page officiel de git](https://git-scm.com/)
+-   Avoir **Git** et **Git/Bash** d'installé sur son ordinateur. [page officiel de git](https://git-scm.com/)
 
 > Git est un logiciel de versioning.
 > Il nous permet de revenir très simplement sur un code antérieur en cas de problème.
 > Git Bash est avant tout utilisé pour les utilisateurs sur **windows**.
 > En effet il va nous permettre d'utiliser des commandes linux dans notre terminal.
 
--- Il nous faut aussi un **IDE** d'installé sur son ordinateur. (_Integrated Development Environment_)
+-   Il nous faut aussi un **IDE** d'installé sur son ordinateur. (_Integrated Development Environment_)
 
 > En français on appel aussi EDI (_Environnement de Développement « Intégré »_)
 > Plusieurs IDE existe. Pour la plus part ils sont entièrement gratuit et surtout ils font largement le travail souhaité.
@@ -61,14 +61,14 @@ Exemple de quelques IDE existant et entièrement gratuit :
 2.  [atom](https://atom.io/) _Déjà testé mais je n'ai pas accroché plus que ça malgré sa qualité_
 3.  [bracket](http://brackets.io/) _Pratique pour faire du html ou css au delà je le trouve limité malgré ces nombreuses extensions_
 
--- Postman d'installé sur son ordinateur - [Lien officiel pour postman](https://www.postman.com/)
--- Un navigateur Internet. - **Personnellement j'utiliserais Google Chrome.**
--- Extension à installé pour chrome
+-   Postman d'installé sur son ordinateur - [Lien officiel pour postman](https://www.postman.com/)
+-   Un navigateur Internet. - **Personnellement j'utiliserais Google Chrome.**
+-   quelques extensions a installer pour chrome
 
 1. [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=fr)
 2. [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr)
 
--- Extension à installé dans visual Studio code
+-   Extension a installer dans visual Studio code
 
 1. Prettier - Code formatter **Très pratique pour ré-indenté proprement notre code lors d'une sauvegarde du fichier**
 2. ES7 React/Redux/GraphQL/React-Native snippets **Raccourcis pour écrire plus rapidement du code react**
