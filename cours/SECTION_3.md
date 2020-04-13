@@ -114,7 +114,7 @@ app.use(
 -   Pour celà, dans le fichier **users.js** on y ajoute cette constante :
 
 ```js
-const { check, validationResult } = require('express-validator/check');
+const { check, validationResult } = require('express-validator');
 // https://express-validator.github.io/docs/
 ```
 
@@ -129,7 +129,7 @@ Soit nous obtenons ce code : **_Code complet_**
 ```js
 const express = require('express');
 const router = express.Router();
-const { check, validationResult } = require('express-validator/check');
+const { check, validationResult } = require('express-validator');
 
 // @route POST api/user
 // @desc Register user
@@ -260,7 +260,7 @@ req.body.email;
 req.body.password;
 ```
 
--   Ancinnement nous aurions écrit ce genre de code :
+-   Anciennement nous aurions écrit ce genre de code :
 
 ```js
 // Définition des constantes
@@ -312,12 +312,12 @@ router.post(
 -   On ajoute le code permettant de récupérer un gravatar (voir étape 2).
 -   On crée à ce moment le nouvel utilisateur avec pour le moment le mot de passe qui n'est pas hashé. (voir la fin de l'étape 2)
 -   Pour justement **hashé le password** et donc passé à l'étape 3, on va devoir importer la dépendance bcrypt avec cette ligne de code
-    `const bcrypt = require('bcryptjs');`
+    `const bcrypt = require('bcrypt');`
 -   Pour l'étape 3 on va devoir ajouté un **sel** d'une taille de 10 (c'est la recommanddation officiel).
 -   Egalement c'est une promesse alors on va y avouter le mot clé : **await** (Voir étape 3)
 -   Pour crypter le password on va réutiliser le **sel** sur notre password avec ce code :
     `user.password = await bcrypt.hash(password, salt);`
--   On fini par une sauvegarde de k'utilisateur avec ce code : `await user.save();`
+-   On fini par une sauvegarde de l'utilisateur avec ce code : `await user.save();`
 -   On peut allez rapidement sur l'étape 4 pour y modifier le message comme quoi l'utilisateur à bien été enregistré.
 
 -   Avant de voir le code JS complet, on peut se rendre sur mongodb et regarder dans notre collection qu'on a bien des datas de renseigner
@@ -332,8 +332,8 @@ router.post(
 ```js
 const express = require('express');
 const gravatar = require('gravatar');
-const bcrypt = require('bcryptjs');
-const { check, validationResult } = require('express-validation/check');
+const bcrypt = require('bcrypt');
+const { check, validationResult } = require('express-validation');
 
 const router = express.Router();
 
@@ -383,7 +383,7 @@ router.post(
 				d: 'mm' // Default "mm" correspond à l'image par défaut de l'utilisateur "404" permet d'avoir une autre image
 			});
 
-			user = new User
+			user = new User({
 		console.log( req.body.email );
 		console.log( req.body.passwordz );{
 				name,
