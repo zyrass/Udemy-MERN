@@ -1,63 +1,74 @@
-# Section N°1 - Introduction
-
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
 -   [Allez à la section suivante](../section_2/section_2.md)
 
-## Vidéo N°3 - Environment & Setup
+# Vidéo N°3 - Environment & Setup
 
 > Voici les pré-requis pour le bon fonctionnement du projet.
 
 1. Compte à créé pour une meilleure expérience.
 
-..1. [Un compte sur Github](https://github.com/) _Permet de stocker notre code versionné en ligne_
-..2. [Un compte sur Postman](https://www.postman.com/) _Permet de testé des futurs requêtes http_
-.... Equivalent en Français : [RESTAPI de DYMA](https://restapi.fr/)
-..3. [Un compte sur MongoDB](https://www.mongodb.com/)
+-   [Un compte sur Github](https://github.com/) _Permet de stocker notre code versionné en ligne_
+-   [Un compte sur Postman](https://www.postman.com/) _Permet de testé des futurs requêtes http_
+    ... Equivalent en Français : [RESTAPI de DYMA](https://restapi.fr/)
+-   [Un compte sur MongoDB](https://www.mongodb.com/)
 
 2. Les outils indispensable
 
-..1. Avoir **node** d'installé sur son ordinateur
-... Lien vers le site officiel : [Node](https://nodejs.org/en/)
-... Node nous permet d'utiliser le gestionnaire de dépendance **NPM**
-... Afin de voir si node est installé sur son ordinateur, il faut ouvrir dans un _terminal_ ou _invite de commande_ et saisir cette commande :
-... `node --version` ou bien `node -v`
-... Un numéro de version sera indiqué. Si c'est le cas vous pouvez continuer
-... On peut également regarder le numéro de version de npm avec la commande :
-... `npm --version` ou `npm -v`
+-   Avoir **node** d'installé sur son ordinateur
 
-..2. Avoir **Git** et **Git/Bash** d'installé sur son ordinateur.
-... Git est un logiciel de versioning, il nous permet de revenir très simplement sur un code antérieur en cas de problème.
-... Git Bash est avant tout utilisé pour les utilisateurs sur **windows**. En effet il va nous permettre d'utiliser des commande linux dans notre terminal.
+> Lien vers le site officiel : [Node](https://nodejs.org/en/)
+> Node nous permet d'utiliser le gestionnaire de dépendance **NPM**
+> Afin de voir si node est installé sur son ordinateur, il faut ouvrir dans un _terminal_ ou _invite de commande_ et saisir cette commande :
 
-..3. Un **IDE** d'installé sur sa machine.
-... Plusieurs IDE existe. Pour la plus part ils sont entièrement gratuit et surtout ils font largement le travail souhaité.
-... Exemple de quelques IDE existant et entièrement gratuit :
+`node --version` ou bien `node -v`
 
--   [visual studio code](https://visualstudio.microsoft.com/fr/) _Mon préféré et le pire c'est qu'il est développé par Microsoft :O_
--   [atom](https://atom.io/) _Déjà testé mais je n'ai pas accroché plus que ça malgré sa qualité_
--   [bracket](http://brackets.io/) _Pratique pour faire du html ou css au delà je le trouve limité malgré les extensions_
--   etc...
+> Un numéro de version sera indiqué. Si c'est le cas vous pouvez continuer
+> On peut également regarder le numéro de version de npm avec la commande :
 
-..4. Postman d'installé sur son ordinateur
-... [Lien officiel](https://www.postman.com/)
+`npm --version` ou `npm -v`
 
-..5. Un navigateur Internet. _J'utiliserai Google Chrome à titre personnel_
+-   Avoir **Git** et **Git/Bash** d'installé sur son ordinateur.
 
-3. Extension à installé pour chrome
+> Git est un logiciel de versioning, il nous permet de revenir très simplement sur un code antérieur en cas de problème.
+> Git Bash est avant tout utilisé pour les utilisateurs sur **windows**. En effet il va nous permettre d'utiliser des commande linux dans notre terminal.
 
-..1. [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=fr)
-..2. [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr)
+-   Un **IDE** d'installé sur sa machine.
 
-4. Extension à installé dans visual Studio code
+> Plusieurs IDE existe. Pour la plus part ils sont entièrement gratuit et surtout ils font largement le travail souhaité.
 
-..1. Prettier - Code formatter _Très pratique pour ré-indenté proprement notre code lors d'une sauvegarde du fichier_
-..2. ES7 React/Redux/GraphQL/React-Native snippets _Raccourcis pour écrire plus rapidement du code react_
+Exemple de quelques IDE existant et entièrement gratuit :
+
+1.  [visual studio code](https://visualstudio.microsoft.com/fr/) _Mon préféré et le pire c'est qu'il est développé par Microsoft :O_
+2.  [atom](https://atom.io/) _Déjà testé mais je n'ai pas accroché plus que ça malgré sa qualité_
+3.  [bracket](http://brackets.io/) _Pratique pour faire du html ou css au delà je le trouve limité malgré les extensions_
+4.  etc...
+
+-   Postman d'installé sur son ordinateur
+
+> [Lien officiel](https://www.postman.com/)
+
+-   Un navigateur Internet.
+
+> _J'utiliserai Google Chrome à titre personnel_
+
+-   Extension à installé pour chrome
+
+> [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=fr) > [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr)
+
+-   Extension à installé dans visual Studio code
+
+> Prettier - Code formatter _Très pratique pour ré-indenté proprement notre code lors d'une sauvegarde du fichier_
+> ES7 React/Redux/GraphQL/React-Native snippets _Raccourcis pour écrire plus rapidement du code react_
 
 ### Configuration de Prettier l'extension de visual studio code
 
-> Pour se rendre dans la configuration il faut cliquer sur : **Fichier** > **Préférences** > **Paramètres**. Une fenêtre de configuration s'ouvre, dans la vidéo de Brad, à ce moment l'interface n'est pas la même. C'est tout simplement du au faite que la formation date un peu et que forcément l'IDE à été mis à jour. _Mais pas de panique c'est la même chose avec une interface graphique_. donc dans la barre de recherche, on saisit ces mots clés :
+> Pour se rendre dans la configuration il faut cliquer sur : **Fichier** > **Préférences** > **Paramètres**.
+> Une fenêtre de configuration s'ouvre, dans la vidéo de Brad, à ce moment l'interface n'est pas la même.
+> C'est tout simplement du au faite que la formation date un peu et que forcément l'IDE à été mis à jour.
+> _Mais pas de panique c'est la même chose avec une interface graphique_.
+> Donc dans la barre de recherche, on saisit ces mots clés :
 
 | Mot clé        | Valeur - _Entre parenthèse, c'est mes valeurs_                                     |
 | -------------- | ---------------------------------------------------------------------------------- |
@@ -78,7 +89,11 @@ Une fenêtre s'ouvre et là on ajoute ce bou de code (Du json).
 
 > Emmet nous permet de saisir du code plus rapidement et donc de gagner beaucoup de temps. Le code ci-dessous permet de faire cohabiter le langage JSX de React avec Emmet.
 
-_Petit exemple d'un code réaliser avec Emmet pour bien comprendre de ce que l'on parle_
+### Exemple d'un code réaliser avec Emmet
+
+Ce code c'est vraiment histoire de bien comprendre de ce quoi on parle parle:
+
+_Code Emmet_
 
 ```
 ul>(li>a{item $})*6
