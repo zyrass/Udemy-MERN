@@ -45,6 +45,8 @@ Donc La description "pas à pas" est rédigéé en **français**. Je ne suis pas
 3. [Ces cours sur UDEMY](https://www.udemy.com/user/brad-traversy/)
 4. [Son Github Personnel](https://github.com/bradtraversy)
 
+> Il est très réputer sur UDEMY, donc je vous recommande ces cours.
+
 ## Le suivi pas à pas de la formation
 
 ### Liste des sections
