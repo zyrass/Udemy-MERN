@@ -44,7 +44,7 @@ Voici le fichier **package.json** qui sera initialisé
 	"description": "Réseau Social pour développeur",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server" // Cette ligne n'est pas celle fournit lors de l'initialisation
+		"start": "node server"
 	},
 	"author": "Brad Traversy",
 	"license": "MIT"
@@ -55,12 +55,10 @@ Voici le fichier **package.json** qui sera initialisé
 
 ```json
 {
-	// ... du code
 	"scripts": {
 		"start": "node server",
 		"server": "nodemon server"
 	}
-	// ... du code
 }
 ```
 
@@ -101,9 +99,7 @@ npm i -D nodemon concurrently
 
 ```json
 {
-	// du code
 	"main": "server.js"
-	// du code
 }
 ```
 
@@ -122,6 +118,7 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 > Une fois le fichier créer dans le terminal on peut lancer le server avec la commande vu précédemment
 
 ```sh
+# Dans un terminal
 npm run server
 ```
 
