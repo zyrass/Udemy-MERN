@@ -30,11 +30,28 @@ Donc La description "pas à pas" est rédigéé en **français**. Je ne suis pas
 
 ## Mais, qui suis-je ?
 
-> Je m'appel **Alain Guillon**, j'ai 36 ans et je suis en reconversion profesionnel. Pour trouver un emploi dans le milieu du WEB je mets toutes les chances de mon côté, je suis inscrit sur d'inombrable plateforme d'apprentissage, j'ai une liste impressionnante de formation à terminer. J'ai découvert une plateforme merveilleuse pour apprendre le javascript et son echo-système. J'ai délaisser le **PHP** appris à la [3W Academy](https://3wa.fr). Je reste un grand débutant de ce langage. \*Je m'en écarte car étant sur linux j'ai énormément de mal à faire fonctionner **PHPMYAdmin** et donc faire du PHP sans base de donnée n'a pas de sens. Je suis _un développeur junior_ et donc j'espère que j'obtiendrais un emploi afin de pouvoir allez de l'avant.
+> Je m'appel **Alain Guillon**, j'ai 36 ans et je suis en reconversion profesionnel.
+> Pour trouver un emploi dans le milieu du WEB je mets toutes les chances de mon côté, je suis inscrit sur d'inombrable plateforme d'apprentissage, j'ai une liste impressionnante de formation à terminer.
+> J'ai découvert une plateforme merveilleuse pour apprendre le javascript et son echo-système.
+> J'ai délaisser le **PHP** appris à la [3W Academy](https://3wa.fr).
+> Je reste un grand débutant de ce langage. _Je m'en écarte car étant sur linux j'ai énormément de mal à faire fonctionner **PHPMYAdmin** et donc faire du PHP sans base de donnée n'a pas de sens_.
 
-1. Un site officiel viendra par la suite
-2. Aucune chaîne Youtube. _Je n'ai pas les accessoires, ni un emplacement adéquat pour réaliser corectement des vidéos_
+```diff
+- Je reste un développeur junior et donc j'espère que j'obtiendrais un emploi afin de pouvoir allez de l'avant.
+```
+
+1. Mon site officiel viendra par la suite ou blog je ne sais pas trop encore.
+2. Aucune chaîne Youtube à mon actif. _Je n'ai pas les accessoires, ni un emplacement adéquat pour réaliser corectement des vidéos_
 3. [Ma page github](https://github.com/Zyrass)
+
+> Si, vous êtes satisfait de ce guide et du résultat obtenu !? Je vous propose de vous parrainer sur la plateforme **[DYMA.fr](https://dyma.fr)** spécialisé dans l'univers de javascript.
+> A titre personnel, j'y gagnerai des abonnements pour continuer à me former sur cette merveilleuse plateforme.
+> (En revanche elle est totalement en Français) **Attention il n'y a aucune obligation pour que je vous parraine**
+
+-   [Mon lien de parrainage sur la plateforme de Dyma.fr](https://dyma.fr/r/5d52bd274e7aec730eb90fde)
+-   Si vous le souhaitez, vous pouvez voir ma progression sur Dyma [ici](https://dyma.fr/developer/5d52bd274e7aec730eb90fde)
+
+> Si j'ai la chance de pouvoir vous parrainer je vous en serais reconnaissant à tout jamais.
 
 ## L'auteur de la formation
 
@@ -45,7 +62,8 @@ Donc La description "pas à pas" est rédigéé en **français**. Je ne suis pas
 3. [Ces cours sur UDEMY](https://www.udemy.com/user/brad-traversy/)
 4. [Son Github Personnel](https://github.com/bradtraversy)
 
-> Il est très réputer sur UDEMY, donc je vous recommande ces cours.
+> Ce formateur est très réputer sur UDEMY, donc je vous recommande ces cours.
+> Ce cours que je suis dispose actuellement de **32 514 participants inscrits à la date du 13/04/2020**
 
 ## Le suivi pas à pas de la formation
 
@@ -69,7 +87,7 @@ Donc La description "pas à pas" est rédigéé en **français**. Je ne suis pas
 
 ## Le contenu des sections Disponible actuellement
 
-### Section N°1 - Introduction
+### Section N°1 - Introductions
 
 1. Welcome To the Course - _Présentation du contenu de la formation. Voir le cours officiel sur UDEMY_
 2. A Look At The Course Project - _Présentation du projet qui sera réalisé. Voir le cours officiel sur UDEMY_
