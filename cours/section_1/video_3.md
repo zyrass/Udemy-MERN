@@ -2,8 +2,8 @@
 
 ## Lien rapide
 
--   [Retourner à la description principale](../blop/master/README.md)
--   [Allez à la section suivante](../blop/master/cours/section_2/section_2.md)
+-   [Retourner à la description principale](../master/README.md)
+-   [Allez à la section suivante](../master/cours/section_2/section_2.md)
 
 ## Vidéo N°3 - Environment & Setup
 
@@ -98,3 +98,8 @@ _Résultat obtenu_
 ```
 
 > c'est vraiment très pratique, vous ne trouvez pas !?
+
+## Lien rapide
+
+-   [Retourner à la description principale](../master/README.md)
+-   [Allez à la section suivante](../master/cours/section_2/section_2.md)

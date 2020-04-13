@@ -2,9 +2,9 @@
 
 ## Lien rapide
 
--   [Retourner à la description principale](../blop/master/README.md)
--   [Allez à la section précédente](../blop/master/cours/section_1/section_1.md)
--   [Allez à la section suivante](../blop/master/cours/section_3/section_3.md)
+-   [Retourner à la description principale](../master/README.md)
+-   [Allez à la section précédente](../master/cours/section_1/section_1.md)
+-   [Allez à la section suivante](../master/cours/section_3/section_3.md)
 
 ## Vidéo n°5 - MongoDB Atlas Setup
 
@@ -36,3 +36,9 @@ Pour l'exemple :
 ### Mongoose
 
 -   La doc officiel de mongoose est disponible à cette adresse : [Lien vers la documentation officiel](https://mongoosejs.com/)
+
+## Lien rapide
+
+-   [Retourner à la description principale](../master/README.md)
+-   [Allez à la section précédente](../master/cours/section_1/section_1.md)
+-   [Allez à la section suivante](../master/cours/section_3/section_3.md)
