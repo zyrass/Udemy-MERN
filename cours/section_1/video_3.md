@@ -1,6 +1,9 @@
 # Section N°1 - Introduction
 
--   [Allez à la section suivante](../blop/cours/section_2)
+## Lien rapide
+
+-   [Retourner à la description principale](../blop/master/README.md)
+-   [Allez à la section suivante](../blop/master/cours/section_2/section_2.md)
 
 ## Vidéo N°3 - Environment & Setup
 
@@ -73,8 +76,9 @@ Une fenêtre s'ouvre et là on ajoute ce bou de code (Du json).
 "emmet.includeLanguages": { "javascript": "javascriptreact" },
 ```
 
-> Emmet nous permet de saisir du code plus rapidement et donc de gagner beaucoup de temps. Le code ci-dessous permet de faire cohabiter le langage JSX de React avec Emmet. Petit exemple d'un code réaliser avec Emmet :
-> _Code Emmet_
+> Emmet nous permet de saisir du code plus rapidement et donc de gagner beaucoup de temps. Le code ci-dessous permet de faire cohabiter le langage JSX de React avec Emmet.
+
+_Petit exemple d'un code réaliser avec Emmet pour bien comprendre de ce que l'on parle_
 
 ```
 ul>(li>a{item $})*6
@@ -93,4 +97,4 @@ _Résultat obtenu_
 </ul>
 ```
 
-> Pratique n'est-pas ?
+> c'est vraiment très pratique, vous ne trouvez pas !?
