@@ -1,4 +1,11 @@
-## Vidéo n°11 - User Registration
+## Lien rapide
+
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la liste de la section n°3](../section_2/section_2.md)
+-   [Allez à la vidéo précédente](./video_7.md)
+-   [Allez à la section suivante](../section_3/section_3.md)
+
+# Vidéo n°11 - User Registration
 
 -   Nous allons poursuivre avec la mise en place d'une simulation d'enregistrement d'un utilisateur dans la base de donnée de mongoDB
 -   On retourne daans le fichier **users.js**

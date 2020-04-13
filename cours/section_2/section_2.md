@@ -1,8 +1,8 @@
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
--   [Retourner sur la section précédente](../section_1/section_1.md)
--   [Allez à la section suivante](../section_3/section_3.md)
+-   [Allez à la section précédente (Section N°1)](../section_1/section_1.md)
+-   [Allez à la section suivante (Section N°3)](../section_3/section_3.md)
 
 # Section N°2 - Express & MongoDB Setup
 

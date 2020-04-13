@@ -1,6 +1,7 @@
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
+-   [Voir la liste de la section en cours](../section_1/section_1.md)
 -   [Allez à la section suivante (Section N°2)](../section_2/section_2.md)
 
 # Vidéo N°3 - Environment & Setup
@@ -129,4 +130,5 @@ _Résultat obtenu_
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
+-   [Voir la liste de la section en cours](../section_1/section_1.md)
 -   [Allez à la section suivante (Section N°2)](../section_2/section_2.md)
