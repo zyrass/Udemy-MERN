@@ -1,8 +1,8 @@
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
--   [Allez à la liste de la section précédente](../section_2/section_2.md)
--   [Allez à la liste de la section suivante](../section_4/section_4.md)
+-   [Allez à la liste de la section précédente (Section N°2)](../section_2/section_2.md)
+-   [Allez à la liste de la section suivante (Section N°4)](../section_4/section_4.md)
 
 # Section N°3 - User API Routes & JWT Authentication
 

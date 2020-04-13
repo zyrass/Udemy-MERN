@@ -1,97 +1,112 @@
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
--   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la liste de la section précédente (Section N°1)](../section_1/section_1.md)
 -   [Allez à la vidéo précédente](./video_7.md)
--   [Allez à la section suivante](../section_3/section_3.md)
+-   [Allez à la liste de la section suivante (Section N°3)](../section_2/section_2.md)
 
 # Vidéo n°8 - Route Files With Express Router
 
--   On créer à la racine de l'application d'un dossier appelé "routes"
--   On créer un sous-dossier appelé : "api"
--   Ensuite on créer dans le dossier "api" 4 fichiers :
-    -- "auth.js", "posts.js", "profile.js", "users.js"
+### Création d'un dossier pour la gestions des routes de l'applications
 
-    -- Le contenu des fichiers sera au début similaire hormis que les routes elles seront différentes.
+-- On créer à la racine de l'application d'un dossier appelé **routes**
+-- On créer dans ce dossier **un sous-dossier** appelé : **api**
+-- Ensuite on créer dans le dossier **api 4 fichiers** :
 
-    Pour users.js :
+| Nom du fichier |
+| -------------- |
+| auth.js        |
+| posts.js       |
+| profile.js     |
+| users.js       |
 
-    ```js
-    const express = require('express');
-    const router = express.Router();
+> Le contenu des fichiers sera au début similaire hormis que les routes elles seront différentes.
 
-    // @route GET api/users
-    // @desc Type route
-    // @access Public
+### Le code pour le fichier users.js :
 
-    router.get('/', (req, res) => res.send('User route'));
+```js
+const express = require('express');
+const router = express.Router();
 
-    module.exports = router;
-    ```
+// @route GET api/users
+// @desc Type route
+// @access Public
 
-    Pour auth.js :
+router.get('/', (req, res) => res.send('User route GET'));
 
-    ```js
-    const express = require('express');
-    const router = express.Router();
+module.exports = router;
+```
 
-    // @route GET api/auth
-    // @desc Test route
-    // @access Public
+### Le code pour le fichier auth.js :
 
-    route.get('/', (req, res) => res.send('Auth route'));
+```js
+const express = require('express');
+const router = express.Router();
 
-    module.exports = router;
-    ```
+// @route GET api/auth
+// @desc Test route
+// @access Public
 
-    Pour profile.js :
+route.get('/', (req, res) => res.send('Auth route GET'));
 
-    ```js
-    const express = require('express');
-    const router = express.Router();
+module.exports = router;
+```
 
-    // @router GET api/profile
-    // @desc Test route
-    // @access Public
+### Le code pour le fichier profile.js :
 
-    route.get('/', (req, res) => res.send('Profile route'));
+```js
+const express = require('express');
+const router = express.Router();
 
-    module.exports = router;
-    ```
+// @router GET api/profile
+// @desc Test route
+// @access Public
 
-    Pour posts :
+route.get('/', (req, res) => res.send('Profile route GET'));
 
-    ```js
-    const express = require('express');
-    const router = express.Router();
+module.exports = router;
+```
 
-    // @route api/posts
-    // @desc Test route
-    // @access Public
+### Le code pour le fichier posts.js :
 
-    router.get('/', (req, res) => res.send('Posts route'));
+```js
+const express = require('express');
+const router = express.Router();
 
-    module.exports = router;
-    ```
+// @route api/posts
+// @desc Test route
+// @access Public
 
--   Dans le fichier "server.js" on y ajoute les routes soit :
+router.get('/', (req, res) => res.send('Posts route GET'));
 
-    ```js
-    // Add Define Routes
-    app.use('/api/users', require('./routes/api/users'));
-    app.use('/api/auth', require('./routes/api/auth'));
-    app.use('/api/profile', require('./routes/api/profile'));
-    app.use('api/posts', require('./routes/api/posts'));
-    ```
+module.exports = router;
+```
 
--   On peut lancer le serveur avec : **"npm run server"**
--   Dans une page web, on tape l'url : **"localhost:5000/"**
--   On ajoute a la fin "api/users" soit : **"localhost:5000/api/users"** et on devrait avoir un résultat.
--   On test les 4 routes et on peut passé à la section 3 si tout est OK
+### Dans le fichier "server.js" on y ajoute les routes soit :
+
+```js
+// ... du code
+
+// Add Define Routes
+app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/profile', require('./routes/api/profile'));
+app.use('api/posts', require('./routes/api/posts'));
+
+// du code ...
+```
+
+-- On peut lancer le serveur avec : **npm run server**
+-- Dans une page web, on tape l'url suivante : **localhost:5000/**
+-- On ajoute a la fin **api/users** soit : **localhost:5000/api/users** et on devrait avoir un résultat.
+
+### Via postman, nous pouvons tester nos routes
+
+-- On test les 4 routes et on peut passé à la section 3 si tout est OK
 
 ## Lien rapide
 
 -   [Retourner à la description principale](../../README.md)
--   [Allez à la liste de la section n°2](../section_2/section_2.md)
+-   [Allez à la liste de la section précédente (Section N°1)](../section_1/section_1.md)
 -   [Allez à la vidéo précédente](./video_7.md)
--   [Allez à la section suivante](../section_3/section_3.md)
+-   [Allez à la liste de la section suivante (Section N°3)](../section_2/section_2.md)
