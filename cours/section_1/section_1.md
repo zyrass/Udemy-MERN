@@ -2,8 +2,8 @@
 
 ## Lien rapide
 
--   [Retourner à la description principale](../master/README.md)
--   [Allez à la section suivante](../master/cours/section_2/section_2.md)
+-   [Retourner à la description principale](../../README.md)
+-   [Allez à la section suivante](../section_2/section_2.md)
 
 ## Section N°1 - Introduction
 
