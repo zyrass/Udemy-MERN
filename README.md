@@ -69,132 +69,18 @@ Donc La description "pas à pas" est rédigéé en **français**. Je ne suis pas
 
 ### Liste des sections
 
-| N°     | Titre de la section                         | Nombre de cours |
-| ------ | ------------------------------------------- | --------------- |
-| **1**  | _Introduction_                              | 4               |
-| **2**  | _Express & MongoDB Setup_                   | 4               |
-| **3**  | _User API Routes & JWT Authentication_      | 6               |
-| **4**  | _Profile API Routes_                        | 9               |
-| **5**  | _Post API Routes_                           | 5               |
-| **6**  | _Getting Started With React & The Frontend_ | 7               |
-| **7**  | _Redux Setup & Alerts_                      | 4               |
-| **8**  | _React User Authentication_                 | 4               |
-| **9**  | _Dashboard & Profile Management_            | 9               |
-| **10** | _Profile Display_                           | 8               |
-| **11** | _Posts & Comments_                          | 8               |
-| **12** | _Prepare & Deploy_                          | 3               |
-| **13** | _Issues, Added Features, etc_               | 2               |
-
-## Le contenu des sections Disponible actuellement
-
-### Section N°1 - Introductions
-
-1. Welcome To the Course - _Présentation du contenu de la formation. Voir le cours officiel sur UDEMY_
-2. A Look At The Course Project - _Présentation du projet qui sera réalisé. Voir le cours officiel sur UDEMY_
-3. [Environment & Setup](../blop/master/cours/section_1/video_3.md) - _Ici on détails les pré-requis pour réaliser à bien le projet_
-4. [Link To Project Files](https://github.com/bradtraversy/devconnector_2.0) - _Lien vers le repository officiel_
-
-### Section N°2 - Express & MongoDB Setup
-
-5. [MongoDB Atlas Setup]()
-6. [Install Dependencies & Basic Express Setup]()
-7. [Connecting To MongoDB With Mongoose]()
-8. [Route Files With Express Router]()
-
-### Section N°3 - User API Routes & JWT Authentication
-
-9. [Creating The User Model]()
-10. [Request & Body Validation]()
-11. [User Registration]()
-12. Implementing JWT **à faire...**
-13. Custom Auth Middleware & JWT Verify **à faire...**
-14. User Authentication / Login Route] **à faire...**
-
-### Section N°4 - Profile API Routes
-
-15. []()
-16. []()
-17. []()
-18. []()
-19. []()
-20. []()
-21. []()
-22. []()
-23. []()
-
-### Section N°5 - Post API Routes
-
-24. []()
-25. []()
-26. []()
-27. []()
-28. []()
-
-### Section N°6 - Getting Started With React & The Frontend
-
-29. []()
-30. []()
-31. []()
-32. []()
-33. []()
-34. []()
-35. []()
-
-### Section N°7 - Redux Setup & Alerts
-
-36. []()
-37. []()
-38. []()
-39. []()
-
-### Section N°8 - React User Authentication
-
-40. []()
-41. []()
-42. []()
-43. []()
-
-### Section N°9 - Dashboard & Profile Management
-
-44. []()
-45. []()
-46. []()
-47. []()
-48. []()
-49. []()
-50. []()
-51. []()
-52. []()
-
-### Section N°10 - Profile Display
-
-53. []()
-54. []()
-55. []()
-56. []()
-57. []()
-58. []()
-59. []()
-60. []()
-
-### Section N°11 - Posts & Comments
-
-61. []()
-62. []()
-63. []()
-64. []()
-65. []()
-66. []()
-67. []()
-68. []()
-
-### Section N°12 - Prepare & Deploy
-
-69. []()
-70. []()
-71. []()
-
-### Section N°13 - Issues, Added Features, etc
-
-72. []()
-73. []()
+| N°     | Titre de la section                         | Nombre de cours | Disponible                                     |
+| ------ | ------------------------------------------- | --------------- | ---------------------------------------------- |
+| **1**  | _Introduction_                              | 4               | [Lien](../master/cours/section_1/section_1.md) |
+| **2**  | _Express & MongoDB Setup_                   | 4               | [Lien](../master/cours/section_2/section_2.md) |
+| **3**  | _User API Routes & JWT Authentication_      | 6               | [Lien](../master/cours/section_3/section_3.md) |
+| **4**  | _Profile API Routes_                        | 9               |                                                |
+| **5**  | _Post API Routes_                           | 5               |                                                |
+| **6**  | _Getting Started With React & The Frontend_ | 7               |                                                |
+| **7**  | _Redux Setup & Alerts_                      | 4               |                                                |
+| **8**  | _React User Authentication_                 | 4               |                                                |
+| **9**  | _Dashboard & Profile Management_            | 9               |                                                |
+| **10** | _Profile Display_                           | 8               |                                                |
+| **11** | _Posts & Comments_                          | 8               |                                                |
+| **12** | _Prepare & Deploy_                          | 3               |                                                |
+| **13** | _Issues, Added Features, etc_               | 2               |                                                |
