@@ -15,11 +15,11 @@ const router = express.Router();
 router.post(
 	'/',
 	[
-		check('name', 'Votre nom est requis').not().isEmpty(),
-		check('email', 'S.V.P, veuillez saisir un E-mail valide').isEmail(),
+		check('name', 'Le champ "Nom" est requis').not().isEmpty(),
+		check('email', 'Veuillez saisir un "E-mail" valide').isEmail(),
 		check(
 			'password',
-			'S.V.P, veuillez saisir un password avec minimum 6 caractères'
+			'Veuillez saisir un "mot de passe" avec au minimum 6 caractères'
 		).isLength({
 			min: 6,
 		}),
@@ -37,21 +37,26 @@ router.post(
 		// Destructuring
 		const { name, email, password } = req.body;
 
-		try {
-			console.table([
-				req.body.name,
-				req.body.email,
-				req.body.password,
-				req.body.avatar,
-			]);
+		console.table("Avant d'avoir crypté le password", [
+			req.body.name,
+			req.body.email,
+			req.body.password,
+		]);
 
+		try {
 			// Etape 1 - On regarde si l'utilisateur est enregistré
+			// Si il existe un user on définit un message d'erreur aveec un status 400
+
 			let user = User.findOne({ email: email });
 
-			// Si il existe un user on définit un message d'erreur aveec un status 400
 			if (user) {
 				return res.status(400).json({
-					errors: [{ msg: 'Utilisateur déjà existant' }],
+					errors: [
+						{
+							msg:
+								'Désolé, cet utilisateur déjà enregistré sur cette application.',
+						},
+					],
 				});
 			}
 
@@ -71,8 +76,14 @@ router.post(
 
 			// Etape 3 - On va encrypter le password avec bxrypt
 			const salt = await bcrypt.genSalt(10);
-			user.password = await bcript.hash(password, salt);
+			user.password = await bcrypt.hash(password, salt);
 			await user.save();
+
+			console.table('Après avoir crypté le password', [
+				req.body.name,
+				req.body.email,
+				req.body.password,
+			]);
 
 			// Etape 4 - On terminera par un retour du jsonwebtoken
 			// code à venir dans la leçon suivante.
@@ -80,7 +91,11 @@ router.post(
 			res.send("L'utilisateur à bien été enregistré");
 		} catch (error) {
 			console.error(error.message);
-			return res.status(500).send('Server error');
+			return res
+				.status(500)
+				.send(
+					"Désolé, le serveur rencontre une erreur. Rassurez-vous, vous n'y êtes pour rien"
+				);
 		}
 
 		res.send('User route POST');

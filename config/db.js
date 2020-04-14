@@ -10,7 +10,7 @@ const connectDB = async () => {
 			useUnifiedTopology: true,
 			useCreateIndex: true,
 		});
-		console.log('Server has been connected....');
+		console.log('Le serveur est bien connecté....');
 	} catch (error) {
 		console.error(error.message);
 		// Exit process with failure
