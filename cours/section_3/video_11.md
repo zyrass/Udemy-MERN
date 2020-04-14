@@ -249,36 +249,108 @@ const connectDB = async () => {
 module.exports = connectDB;
 ```
 
+#### Etape 1 - Le code en lui même
+
+-- Dans le bloc try, on définit un variable **user** qui sera ré-exploité. Cette variable contient **le model User**
+
+> La méthode **findOne** est issue de **mongoDB**
+
+-- On y ajoute un condition qui correspond à une vérification si notre utilisateur existe.
+
+> Si c'est le cas on renverra un status d'erreur 400 avec au format JSON un tableau du message d'erreur
+
+```js
+// Etape 1 - On regarde si l'utilisateur existe
+let user = await User.findOne({ email: email });
+
+if (user) {
+	return res.status(400).json({ errors: [{ msg: 'User déjà existant' }] });
+}
+```
+
 ### Passage à l'étape 2 - la gestion de l'image
 
--   Une fois ceci corrigé on peut y ajouter la constante pour gérer les avatars pour l'étape 2.
-    ```js
-    const gravatar = require('gravatar');
-    ```
--   On ajoute le code permettant de récupérer un gravatar (voir étape 2).
--   On crée à ce moment le nouvel utilisateur avec pour le moment le mot de passe qui n'est pas hashé. (voir la fin de l'étape 2)
--   Pour justement **hashé le password** et donc passé à l'étape 3, on va devoir importer la dépendance bcrypt avec cette ligne de code
-    `const bcrypt = require('bcrypt');`
--   Pour l'étape 3 on va devoir ajouté un **sel** d'une taille de 10 (c'est la recommanddation officiel).
--   Egalement c'est une promesse alors on va y avouter le mot clé : **await** (Voir étape 3)
--   Pour crypter le password on va réutiliser le **sel** sur notre password avec ce code :
-    `user.password = await bcrypt.hash(password, salt);`
--   On fini par une sauvegarde de l'utilisateur avec ce code : `await user.save();`
--   On peut allez rapidement sur l'étape 4 pour y modifier le message comme quoi l'utilisateur à bien été enregistré.
+-- Une fois ce petit problème corrigé, on peut y ajouter la constante pour gérer les avatars pour l'étape 2.
 
--   Avant de voir le code JS complet, on peut se rendre sur mongodb et regarder dans notre collection qu'on a bien des datas de renseigner
--   Dans postman on peut tester l'existance de notre utilisateur en l'ajoutant directement à nouveau avec send.
+> Même chose que précédemment, la constante se situe tout en haut de notre fichier **users.js**
+
+```js
+const gravatar = require('gravatar');
+```
+
+-- On ajoute le code permettant de récupérer un gravatar.
+-- On en profite pour créer à ce moment le nouvel utilisateur avec le mot de passe non crypté.
+
+#### Code de l'étape 2
+
+```js
+// Etape 2 - On récupère l'avatar de l'utilisateur
+const gravatar = gravatar.url(email, {
+	s: '200', // Taille de l'image ici 200px.
+	r: 'pg', // Read
+	d: 'mm', // Default "mm" correspond à l'image par défaut de l'utilisateur "404" permet d'avoir une autre image
+});
+
+user = new User({
+	name,
+	email,
+	avatar,
+	password,
+});
+```
+
+### Passage à l'étape 3 - Le cryptage du mot de passe
+
+-- Pour justement **hashé le password**, on va devoir importer la dépendance bcrypt avec cette ligne de code :
+
+> A savoir, dans le cours officiel, la dépendance **bcryptjs** est **déprécié**, j'ai donc utilisé la version recommandé soit **bcrypt**
+
+```js
+const bcrypt = require('bcrypt');
+```
+
+-- Pour crypter un mot de passe, on va devoir ajouté un **sel** d'une taille de 10 (c'est la recommanddation officiel).
+-- Egalement, notre requête renvoie une promesse alors on va y avouter le mot clé : **await**
+
+```js
+// Etape 3 - On va encrypter le password avec bcrypt
+const salt = await bcrypt.genSalt(10);
+```
+
+-- Donc, pour crypter le password on va utiliser le **sel** sur notre password avec ce code :
+
+```js
+// user.password correspond à l'objet user précédemment créer et on recherche la clé password
+// la méthode hash de bcrypt prends 2 paramètres, le 1er étant notre mot de passe le second c'est le sel qu'on a généré précedemment
+user.password = await bcript.hash(password, salt);
+```
+
+-- On fini par une sauvegarde de l'utilisateur avec ce code :
+
+```js
+await user.save();
+```
+
+### Etape 4 - A découvrir dans la prochaine vidéo
+
+-- On peut allez rapidement sur l'étape 4 pour y modifier le message comme quoi l'utilisateur à bien été enregistré.
+
+### Etape intermédiaire pour de la validation
+
+-- Avant de voir le code JS complet, on peut se rendre sur mongodb et regarder dans notre collection qu'on a bien les données d'enregistrer.
+-- Dans postman on peut tester l'existance de notre utilisateur en l'ajoutant directement à nouveau avec send.
 
 #### Voici le code complet
 
 ```diff
-- Ne pas oublier la modification du fichier db.js
+- Rappel : Ne surtout pas oublier la modification du fichier db.js
 ```
 
 ```js
 const express = require('express');
 const gravatar = require('gravatar');
 const bcrypt = require('bcrypt');
+
 const { check, validationResult } = require('express-validation');
 
 const router = express.Router();
@@ -289,9 +361,9 @@ const router = express.Router();
 router.post(
 	'/',
 	[
-		check('name', 'Votre Nom est requis').not().isEmpty(),
-		check('email', 'S.V.P, veuillez saisir un E-mail valide').isEmail(),
-		check('password', 'S.V.P, veuillez saisir un password avec minimum 6 caractères).isLength({
+		check('name', 'Le champ "Nom" est requis').not().isEmpty(),
+		check('email', 'Veuillez saisir un "E-mail" valide').isEmail(),
+		check('password', 'Veuillez saisir un "Mot De Passe" avec minimum 6 caractères).isLength({
 			min: 6
 		})
 	],
@@ -330,21 +402,21 @@ router.post(
 			});
 
 			user = new User({
-		console.log( req.body.email );
-		console.log( req.body.passwordz );{
 				name,
 				email,
 				avatar,
 				password
 			});
 
+			// On constatera que le mot de passe à cet instant n'est pas crypté
+
 			// Etape 3 - On va encrypter le password avec bcrypt
 			const salt = await bcrypt.genSalt(10);
 			user.password = await bcript.hash(password, salt);
+			await user.save();
 
 			// Etape 4 - On terminera par un retour du jsonwebtoken
 				// code ici ...
-
 			res.send("L'utilisateur à bien été enregistrer");
 
 		} catch( err ) {

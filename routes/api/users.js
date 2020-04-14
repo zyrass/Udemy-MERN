@@ -72,6 +72,7 @@ router.post(
 			// Etape 3 - On va encrypter le password avec bxrypt
 			const salt = await bcrypt.genSalt(10);
 			user.password = await bcript.hash(password, salt);
+			await user.save();
 
 			// Etape 4 - On terminera par un retour du jsonwebtoken
 			// code à venir dans la leçon suivante.
