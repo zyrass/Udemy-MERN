@@ -37,11 +37,8 @@ router.post(
 		// Destructuring
 		const { name, email, password } = req.body;
 
-		console.table("Avant d'avoir crypté le password", [
-			req.body.name,
-			req.body.email,
-			req.body.password,
-		]);
+		console.log("Avant d'avoir crypté le password");
+		console.table([req.body.name, req.body.email, req.body.password]);
 
 		try {
 			// Etape 1 - On regarde si l'utilisateur est enregistré
@@ -79,11 +76,8 @@ router.post(
 			user.password = await bcrypt.hash(password, salt);
 			await user.save();
 
-			console.table('Après avoir crypté le password', [
-				req.body.name,
-				req.body.email,
-				req.body.password,
-			]);
+			console.log('Après avoir crypté le password');
+			console.table([req.body.name, req.body.email, req.body.password]);
 
 			// Etape 4 - On terminera par un retour du jsonwebtoken
 			// code à venir dans la leçon suivante.
